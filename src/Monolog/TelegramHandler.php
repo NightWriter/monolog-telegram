@@ -15,13 +15,13 @@ class TelegramHandler extends AbstractProcessingHandler
     private $token;
     private $chatId;
 
-    public function __construct(int $level, string $token, int $chatId, bool $bubble = true, Client $client = null)
+    public function __construct(string $level, string $token, int $chatId, bool $bubble = true, Client $client = null)
     {
         $this->client = $client ?? GuzzleFactory::make(['base_uri' => 'https://api.telegram.org']);
         $this->token = $token;
         $this->chatId = $chatId;
 
-        parent::__construct($level, $bubble);
+        parent::__construct(\Monolog\Logger::getLevels()[$level], $bubble);
     }
 
     /**
