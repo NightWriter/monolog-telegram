@@ -1,5 +1,5 @@
 {
-  "name": "vladimir-yuldashev/monolog-telegram",
+  "name": "nightwriter/monolog-telegram",
   "description": "Telegram handler for Monolog",
   "type": "library",
   "require": {
@@ -13,19 +13,14 @@
   },
   "autoload": {
     "psr-4": {
-      "VladimirYuldashev\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "VladimirYuldashev\\Monolog\\Tests\\": "tests/"
+      "Nigtwriter\\": "src/"
     }
   },
   "license": "MIT",
   "authors": [
     {
-      "name": "Vladimir Yuldashev",
-      "email": "misterio92@gmail.com"
+      "name": "Kyrylo Melnychuk",
+      "email": "hitman@alterego.biz.ua"
     }
   ],
   "config": {

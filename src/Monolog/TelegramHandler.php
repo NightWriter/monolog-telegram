@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace VladimirYuldashev\Monolog;
+namespace Nigtwriter\Monolog;
 
 use Exception;
 use GrahamCampbell\GuzzleFactory\GuzzleFactory;
