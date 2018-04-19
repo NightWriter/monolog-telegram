@@ -31,7 +31,7 @@ class TelegramHandler extends AbstractProcessingHandler
      *
      * @return void
      */
-    protected function write(array $record): void
+    protected function write(array $record)
     {
         try {
             $message = '[' . gethostname() . '] ' . $record['formatted'];
@@ -41,6 +41,7 @@ class TelegramHandler extends AbstractProcessingHandler
                 'form_params' => [
                     'chat_id' => $this->chatId,
                     'text' => $message,
+                    'parse_mode' => 'HTML'
                 ],
             ]);
         } catch (Exception $exception) {

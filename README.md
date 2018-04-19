@@ -1,11 +1,4 @@
-# Telegram handler for Monolog
-
-## Installation
-
-``` bash
-$ composer require vladimir-yuldashev/monolog-telegram
-```
-
+# Telegram handler for Monolog, forked for php < 7.2 from vladimir-yuldashev/monolog-telegram
 
 ## Usage
 
